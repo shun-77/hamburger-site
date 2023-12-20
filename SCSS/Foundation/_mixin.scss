@@ -1,8 +1,6 @@
 @use 'variable' as v;
 
 //media query
-
-
 @mixin sp {
 	@media screen and (max-width: v.$break-point_sp - 1) {
 		@content;
