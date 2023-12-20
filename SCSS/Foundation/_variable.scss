@@ -1,0 +1,23 @@
+// color
+$grey:#707070;
+$brown:#3C2A10;
+$creamColor1:#FFF7EF;
+$creamColor2:#F2EDE9;
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500&display=swap');
+
+.Roboto{
+    font-family: 'Roboto', sans-serif;
+}
+.MPlus{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+// break point
+$break-point_sp:540px;
+$break-point_tab:768px;
+$break-point_pc:1200px;
+
+
