@@ -1,0 +1,40 @@
+@use 'variable' as v;
+
+//media query
+
+
+@mixin sp {
+	@media screen and (max-width: v.$break-point_sp - 1) {
+		@content;
+	}
+}
+
+@mixin tab {
+	@media screen and (max-width: v.$break-point_sp) {
+		@content;
+	}
+}
+
+@mixin pc {
+	@media screen and (min-width: v.$break-point_pc) {
+		@content;
+	}
+}
+
+// ----
+// * ex)
+//   @include media-max(横幅) {}
+//   @include media-min(横幅) {}
+// ----
+@mixin media-max($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin media-min($width) {
+	@media screen and (min-width: $width) {
+		@content;
+	}
+}
+
