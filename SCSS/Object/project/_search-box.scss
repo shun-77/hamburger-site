@@ -1,10 +1,2 @@
-@use'../component/';
 
-.p-search-box{
-    .c-form_header{
-        @extend .c-form_header;
-    }
-    .c-button_header{
-        @extend .c-form_header;
-    }
-}
+
