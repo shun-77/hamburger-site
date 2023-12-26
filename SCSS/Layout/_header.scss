@@ -1,0 +1,8 @@
+@use '../Object/component/';
+@use '../Object/project/';
+
+.l-header{
+        .p-search-box{
+        @extend .p-search-box;
+    }
+}

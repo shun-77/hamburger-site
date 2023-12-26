@@ -1,0 +1,7 @@
+@use 'variable' as v;
+
+h1{
+    @extend .Roboto;
+    font-size: 2rem;
+}
+

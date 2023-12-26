@@ -1,0 +1,15 @@
+@use '../../Foundation/variable'as v;
+.c-form{
+    &__header{
+        width: 216px;
+        height: 46px;
+        border: 2px ;
+        
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        border: 2px v.$grey;
+        border-radius: 10px 8px 10px 10px;
+    }
+}

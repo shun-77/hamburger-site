@@ -382,4 +382,14 @@ th {
 .MPlus {
   font-family: "M PLUS 1p", sans-serif;
 }
+
+.c-button__header {
+  width: 136px;
+  height: 46px;
+  color: #707070;
+  background-color: #E4DEDA;
+  border: 1px #707070;
+  border-radius: 10px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
