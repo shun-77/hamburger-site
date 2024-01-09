@@ -1,0 +1,25 @@
+@use '../Foundation/variable' as v;
+
+// common---------------
+.l-main{
+    &__hero{
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        background: url(../../images/mainvisual-img/mainvisual-sp@2x.jpg) no-repeat;
+        background-position: center center;
+        background-size: 100% 100vw;
+        width: 100vw ;
+        height: 285px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &__hero-text{
+        position: absolute;
+        top:calc(50% - 18px) ;
+        left: 25px;
+        font-size: 36px;
+        font-weight: 700;
+        color: #fff;
+
+    }
+}

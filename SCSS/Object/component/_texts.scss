@@ -1,0 +1,45 @@
+@use '../../Foundation/variable' as v;
+// global=========
+.c-texts{
+    &__menu{
+        font-size: 20px;
+        font-weight: 400;
+        @extend %MPlus;
+        color: v.$grey;
+        padding: 30px 0 0 30px;
+    }
+}
+// frontpage=========
+.c-texts{
+    &__frontpage{
+        width: 90%;
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    }
+    &__frontpage-item{
+        color: v.$brown;
+        @extend %MPlus;
+        background: #FFFFFFCC;
+        margin-bottom: 20px;
+;       padding: 15px;
+    }
+    &__frontpage-title{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 13px;
+    }
+    &__frontpage-text{
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+// map
+.c-texts{
+    &__map{
+        font-size: 14px;
+        font-weight: 700;
+        color: #FFFFFF;
+        line-height: 44.55px;
+    }
+}

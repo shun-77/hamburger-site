@@ -2,12 +2,13 @@
 
 .c-button{
     &__header{
-        width:136px;
+        width:30%;
         height: 46px;
         color: v.$grey;
         background-color: v.$lightGrey;
-        border: 3px v.$grey;
+        border: 1px solid v.$grey;
         border-radius: 10px;
         text-align: center;
+        @extend %MPlus;
     }   
 }

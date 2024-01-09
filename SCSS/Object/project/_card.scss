@@ -1,0 +1,20 @@
+.p-card{
+    
+    &__frontpage{
+        width: 100%;
+        height: 642px;
+        padding: 20px;
+        position: relative;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 40px;
+        &.-takeout{
+            background-image: url(../../../images/takeout.jpg);
+        }
+        &.-eatin{
+            background: url(../../../images/eatin.jpg);
+            background-size: cover;
+        }
+    }
+}

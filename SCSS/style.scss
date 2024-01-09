@@ -1,5 +1,5 @@
 @use 'Foundation';
 @use 'Layout';
-@use 'Object/component';
-@use 'Object/project';
-@use 'Object/utility';
+@use 'Object/component' as c;
+@use 'Object/project' as p;
+@use 'Object/utility' as u;

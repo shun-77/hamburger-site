@@ -1,20 +1,15 @@
 @use 'variable' as v;
 
 //media query
-@mixin sp {
-	@media screen and (max-width: v.$break-point_sp - 1) {
-		@content;
-	}
-}
 
 @mixin tab {
-	@media screen and (max-width: v.$break-point_sp) {
+	@media screen and (	min-width: v.$break-point_sp) {
 		@content;
 	}
 }
 
 @mixin pc {
-	@media screen and (min-width: v.$break-point_pc) {
+	@media screen and (min-width: v.$break-point_tab ) {
 		@content;
 	}
 }

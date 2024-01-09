@@ -1,0 +1,29 @@
+@use '../../Foundation/variable' as v;
+
+// global
+.c-title{
+    &__menu{
+        font-size: 24px;
+        font-weight: 700;
+        @extend %MPlus;
+        color: v.$grey;
+        margin-bottom: 40px;
+    }
+}
+// frontpage==========
+.c-title{
+    &__frontpage{
+        font-size: 41px;
+        font-weight: 700;
+        color: #fff;
+    }
+}
+// map
+.c-title{
+    &__map{
+        font-size: 30px;
+        font-weight: 700;
+        color: #FFFFFFCC;
+        margin-bottom: 15px;
+    }
+}

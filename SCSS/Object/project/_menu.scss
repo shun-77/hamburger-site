@@ -1,0 +1,18 @@
+@use '../../Foundation/variable'as v;
+.p-menu{
+    width: 326px;
+    height: 2700px;
+    position: absolute;
+    z-index: 1000;
+    background-color: v.$creamColor1;
+    padding: 200px 0 0 30px;
+    right: -800px;
+    &.active{
+    right:0;
+    transition: right .56s;
+    }
+    &__list{
+        margin-bottom: 80px;
+    }
+    
+}

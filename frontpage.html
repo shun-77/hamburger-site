@@ -6,14 +6,45 @@
     <title>hamburger-site-frontpage</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/36a2d553f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="l-wrapper">
         <header class="l-header">
-            <p class="l-header__menu">Menu</p>
-            <h1 class="l-header__logo">Hamburger</p>
-            <div class="p-search-box">
-                <div class="c-form__header"></div>
+            <nav class="l-header__nav">
+                <div class="l-header__menu-btn--close js-header__menu-btn--close"><span class="l-header__btn-line--close"></span></div>
+                <p class="l-header__menu-btn--open js-header__menu-btn--open">Menu</p>
+                <div class="c-cover js-cover"></div>
+                <div class="p-menu js-menu">
+                    <ul class="p-menu__list"><p class="c-title__menu">バーガー</p>
+                        <li class="c-texts__menu">ハンバーガー</li>
+                        <li class="c-texts__menu">チーズバーガー</li>
+                        <li class="c-texts__menu">テリヤキバーガー</li>
+                        <li class="c-texts__menu">アボガドバーガー</li>
+                        <li class="c-texts__menu">フィッシュバーガー</li>
+                        <li class="c-texts__menu">ベーコンバーガー</li>
+                        <li class="c-texts__menu">チキンバーガー</li>
+                    </ul>
+                    <ul class="p-menu__list"><p class="c-title__menu">サイド</p>
+                        <li class="c-texts__menu">ポテト</li>
+                        <li class="c-texts__menu">サラダ</li>
+                        <li class="c-texts__menu">ナゲット</li>
+                        <li class="c-texts__menu">コーン</li>
+                    </ul>
+                    <ul class="p-menu__list"><p class="c-title__menu">ドリンク</p>
+                        <li class="c-texts__menu">コーラ</li>
+                        <li class="c-texts__menu">ファンタ</li>
+                        <li class="c-texts__menu">オレンジ</li>
+                        <li class="c-texts__menu">アップル</li>
+                        <li class="c-texts__menu">紅茶（Ice/Hot）</li>
+                        <li class="c-texts__menu">コーヒー（Ice/Hot）</li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="l-header__logo">Hamburger</h1>
+            <div class="p-search-box -sp -tab -pc">
+                <div class="c-form__header"><i class="fa-solid fa-magnifying-glass"></i></div>
                 <button class="c-button__header"><p class="c-button__header-text">検索</p></button>
             </div>
         </header>
@@ -21,56 +52,61 @@
             <div class="l-container">
                 <section id="l-main__content">
                     <div class="l-main__hero">
-                        <p class="l-main__hero-text">ダミーサイト</p>
+                        <h2 class="l-main__hero-text">ダミーサイト</h2>
                     </div>
                     <div class="l-main__about">
-                        <div class="p-card__frontpage">
+                        <div class="p-card__frontpage -takeout">
                             <h2 class="c-title__frontpage">Take Out</h2>
                             <div class="c-line__main"></div>
-                            <div>
-                                <div class="c-texts__frontpage">
+                            <div class="c-texts__frontpage">
+                                <div class="c-texts__frontpage-item">
                                     <h3 class="c-texts__frontpage-title">Take Out</h3>
                                     <p class="c-texts__frontpage-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
                                 </div>
-                                <div class="c-texts__frontpage">
+                                <div class="c-texts__frontpage-item">
                                     <h3 class="c-texts__frontpage-title">Take Out</h3>
                                     <p class="c-texts__frontpage-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="p-card__frontpage">
+                        <div class="p-card__frontpage -eatin">
                             <h2 class="c-title__frontpage">Eat In</h2>
                             <div class="c-line__main"></div>
-                            <div>
-                                <div class="c-texts__frontpage">
+                            <div class="c-texts__frontpage">
+                                <div class="c-texts__frontpage-item">
                                     <h3 class="c-texts__frontpage-title">Eat In</h3>
                                     <p class="c-texts__frontpage-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです<br>
                                        店内でお食事いただけるメニューです店内でお食事いただけるメニューです<br>
-                                       店内でお食事いただけるメニューです店内でお食事いただけるメニューです<br>
-                                       店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
+                                    </p>
                                 </div>
-                                <div class="c-texts__frontpage">
+                                <div class="c-texts__frontpage-item">
                                     <h3 class="c-texts__frontpage-title">Eat In</h3>
                                     <p class="c-texts__frontpage-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです<br>
                                        店内でお食事いただけるメニューです店内でお食事いただけるメニューです<br>
-                                       店内でお食事いただけるメニューです店内でお食事いただけるメニューです<br>
-                                       店内でお食事いただけるメニューです店内でお食事いただけるメニューです</p>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="l-main_map">
-                        <h2>見出しが入ります</h2>
-                        <div class="c-line_fotter"></div>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="p-map">
+                        <div class="p-map__cover--1">
+                            <div class="p-map__cover--2 ">
+                                <div class="p-map__texts">
+                                    <h2 class="c-title__map">見出しが入ります</h2>
+                                    <div class="c-line__map"></div>
+                                    <p class="c-texts__map">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                </div>    
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
         </main>
         <footer class="l-footer">
-            <p>ショップ情報 | ヒストリー</p>
-            <small>Copyright: RaiseTech</small>
+            <p class="l-footer__title">ショップ情報 | ヒストリー</p>
+            <small class="l-footer__copyright">Copyright: RaiseTech</small>
         </footer>
     </div>
+    <script src="./JS/index.js"></script>
 </body>
-</html>
+</html

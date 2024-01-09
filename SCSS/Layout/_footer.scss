@@ -1,0 +1,25 @@
+@use '../Foundation/variable'as v;
+.l-footer{
+    height: 150px;
+    margin-left: calc(100% - 100vw); 
+    margin-right: calc(100% - 100vw);
+    background-image:url(../../images/footer-layer.jpg) ;
+    padding: 20px;
+    position: relative;
+    &__title{
+        font-size: 18px;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-align: center;
+        @extend %MPlus;
+    }
+    &__copyright{
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 5%;
+        left: calc(50% - 70px);
+        @extend %MPlus;
+    }
+}
