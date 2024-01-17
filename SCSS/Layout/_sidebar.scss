@@ -1,0 +1,7 @@
+@use '../Foundation/mixin' as m;
+
+@include m.pc{
+    .l-sidebar{
+        width: 30%;
+    }
+}

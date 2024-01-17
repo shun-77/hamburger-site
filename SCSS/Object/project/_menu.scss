@@ -1,18 +1,44 @@
 @use '../../Foundation/variable'as v;
+@use '../../Foundation/mixin' as m;
+
 .p-menu{
     width: 326px;
-    height: 2700px;
+    height: 2750px;
     position: absolute;
     z-index: 1000;
-    background-color: v.$creamColor1;
+    background-color: v.$creamColor2;
     padding: 200px 0 0 30px;
-    right: -800px;
+    right: 0;
+    transform: translateX(326px);
     &.active{
-    right:0;
-    transition: right .56s;
+    transform: translateX(0);
+    transition: transform .3s;
     }
     &__list{
         margin-bottom: 80px;
     }
-    
+    &__title{
+        display: none;
+    }
+}
+
+@include m.tab{
+    .p-menu{
+        height: 1790px;
+    }
+}
+@include m.pc{
+    .p-menu{
+        padding: 0 20px 0 40px;
+        position: static;
+        transform: translateX(0);
+        width: 20%;
+        height: auto;
+        &__title{
+            display: block;
+            font-size: 34px;
+            margin-top: 94px;
+            margin-bottom: 90px;
+        }
+    }
 }

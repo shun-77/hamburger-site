@@ -1,6 +1,9 @@
 @use '../Foundation/variable' as v;
+@use '../Foundation/mixin' as m;
 
+// sp・tab ver
 .l-header{
+    height: 217px;
     padding-bottom: 30px;
     background-color: v.$creamColor1;
     margin-left: calc(50% - 50vw);
@@ -63,4 +66,28 @@
         @extend %Roboto;
     }
 
+}
+
+// pc ver
+
+@include m.pc{
+    .l-header{
+        padding: 0;
+        margin: 0;
+        &__container-flex{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 217px;
+            margin: 0 20px;
+        }
+        &__logo{
+            width: 30%;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        &__menu-btn--open{
+            display: none;
+        }
+    }
 }

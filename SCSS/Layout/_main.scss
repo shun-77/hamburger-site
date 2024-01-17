@@ -1,4 +1,5 @@
 @use '../Foundation/variable' as v;
+@use '../Foundation/mixin' as m;
 
 // common---------------
 .l-main{
@@ -12,6 +13,14 @@
         height: 285px;
         position: relative;
         margin-bottom: 20px;
+        @include m.tab{
+            margin-bottom: 30px;
+        }
+        @include m.pc{
+            margin: 0;
+            width: 100%;
+            margin-bottom: 40px;
+        }
     }
     &__hero-text{
         position: absolute;
@@ -21,5 +30,14 @@
         font-weight: 700;
         color: #fff;
 
+    }
+    &__about{
+        @include m.tab{
+            display: flex;
+            justify-content: space-between;
+        }
+        @include m.pc{
+            margin: 0 30px;
+        }
     }
 }

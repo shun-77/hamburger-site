@@ -1,4 +1,5 @@
 @use '../../Foundation/variable'as v;
+@use '../../Foundation/mixin' as m;
 .c-form{
     &__header{
         width: 60%;
@@ -17,4 +18,13 @@
         }
     }
 
+}
+
+// pc ver
+@include m.pc{
+    .c-form{
+        &__header{
+            
+        }
+    }
 }

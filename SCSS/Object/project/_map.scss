@@ -1,14 +1,28 @@
+@use '../../Foundation/mixin' as m;
 .p-map{
     height: 691px;
     background-image:url(../../images/map.png);
     position: relative;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
+    @include m.tab{
+        height: 378px;
+    }
+    @include m.pc{
+        height: 649px;
+        margin: 0;
+    }
     &__texts{
-        padding: 40px;
+        position: absolute;
+        top: 8%;
+        left: 8%;
         // overflow:hiddenを効かせるため（55%*x=100% →　x=1.81818182 ←.p-mapのheight) 1.6にしたのはその高さよりも少し小さくするため
         height: 100% * 1.6; 
         overflow: hidden;
+        @include m.pc{
+            top: 18%;
+            width: 60%;
+        }
     }
 }
 
@@ -23,5 +37,11 @@
     &--2{
         height: 55%;
         background-color: rgba(0, 0, 0, 0.358);
+        @include m.tab{
+            height: 100%;
+        }
+        @include m.pc{
+            width: 65%;
+        }
     }
 }

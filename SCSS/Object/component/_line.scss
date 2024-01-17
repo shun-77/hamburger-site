@@ -1,3 +1,4 @@
+@use '../../Foundation/mixin' as m;
 .c-line{
     &__main{
         width: 33.89px;
@@ -12,5 +13,8 @@
         height: 1px;
         border: 1px solid #FFFFFF;
         margin-bottom: 15px;
+        @include m.pc{
+            margin-bottom: 40px;
+        }
     }
 }

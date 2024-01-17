@@ -1,3 +1,5 @@
+@use '../../Foundation/mixin' as m;
+
 .p-card{
     
     &__frontpage{
@@ -11,10 +13,16 @@
         margin-bottom: 40px;
         &.-takeout{
             background-image: url(../../../images/takeout.jpg);
+            @include m.tab{
+                width: 48%;
+            }
         }
         &.-eatin{
             background: url(../../../images/eatin.jpg);
             background-size: cover;
+            @include m.tab{
+                width: 48%;
+            }
         }
     }
 }

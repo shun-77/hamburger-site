@@ -1,8 +1,10 @@
 @use '../Foundation/variable'as v;
+@use '../Foundation/mixin' as m;
+
 .l-footer{
     height: 150px;
-    margin-left: calc(100% - 100vw); 
-    margin-right: calc(100% - 100vw);
+    margin-left: calc(50% - 50vw); 
+    margin-right: calc(50% - 50vw);
     background-image:url(../../images/footer-layer.jpg) ;
     padding: 20px;
     position: relative;
