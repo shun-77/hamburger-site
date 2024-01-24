@@ -39,9 +39,17 @@
     &.-big{
         font-size: 20px;
         margin-bottom: 34px;
+        @include m.pc{
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
     }
     &.-small{
         font-size: 16px;
-        margin-bottom: 15px;       
+        margin-bottom: 15px;   
+        @include m.pc{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }    
     }
 }

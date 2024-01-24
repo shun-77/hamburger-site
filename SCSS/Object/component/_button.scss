@@ -1,5 +1,5 @@
 @use '../../Foundation/variable' as v;
-
+@use '../../Foundation/mixin' as m;
 .c-button{
     &__header{
         width:30%;
@@ -27,6 +27,10 @@
             font-weight: 700;
             font-size: 16px;
             @extend %MPlus;
+        }
+        @include m.pc{
+            width: 292px;
+            height: 76px;
         }
     }
 }

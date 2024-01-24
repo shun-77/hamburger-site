@@ -499,7 +499,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .l-main__content {
-    padding: 0 20px;
+    padding: 0 35px;
   }
 }
 @media screen and (min-width: 540px) {
@@ -613,6 +613,12 @@ body {
   font-weight: 700;
   font-size: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .c-button__about {
+    width: 292px;
+    height: 76px;
+  }
+}
 
 .c-form__header {
   width: 60%;
@@ -700,6 +706,11 @@ body {
   line-height: 23.78px;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1024px) {
+  .c-texts__card-archive {
+    margin-bottom: 45px;
+  }
+}
 
 .c-title__menu {
   font-size: 24px;
@@ -733,9 +744,21 @@ body {
   font-size: 20px;
   margin-bottom: 34px;
 }
+@media screen and (min-width: 1024px) {
+  .c-title__card-archive.-big {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 .c-title__card-archive.-small {
   font-size: 16px;
   margin-bottom: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .c-title__card-archive.-small {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 .c-cover {
@@ -784,6 +807,11 @@ body {
   height: auto;
   margin-bottom: 80px;
 }
+@media screen and (min-width: 540px) {
+  .p-card__archive {
+    display: flex;
+  }
+}
 .p-card__archive-img {
   height: 230px;
   width: 100%;
@@ -793,11 +821,32 @@ body {
   height: 100%;
   object-fit: cover;
 }
+@media screen and (min-width: 540px) {
+  .p-card__archive-img > img {
+    object-position: center left;
+  }
+}
+@media screen and (min-width: 540px) {
+  .p-card__archive-img {
+    width: 50%;
+    height: auto;
+  }
+}
 .p-card__archive-texts {
   height: auto;
   color: #fff;
   background-color: #3C2B1C;
   padding: 45px 30px 30px 30px;
+}
+@media screen and (min-width: 540px) {
+  .p-card__archive-texts {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .p-card__archive-texts {
+    padding: 60px 45px 45px 45px;
+  }
 }
 
 .p-search-box {
