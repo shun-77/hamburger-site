@@ -12,3 +12,21 @@
         @extend %MPlus;
     }   
 }
+
+.c-button{
+    &__about{
+        display: block;
+        width:164px ;
+        height: 43px;
+        margin: 0 auto;
+        border-radius: 30px;
+        color: v.$grey;
+        background-color: #fff;
+        text-align: center;
+        &>a{
+            font-weight: 700;
+            font-size: 16px;
+            @extend %MPlus;
+        }
+    }
+}

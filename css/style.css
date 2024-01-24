@@ -373,11 +373,11 @@ th {
   font-weight: bold;
 }
 
-.l-header__menu-btn--open, .l-header__logo {
+.p-pagenation, .l-header__menu-btn--open, .l-header__logo {
   font-family: "Roboto", sans-serif;
 }
 
-.c-title__menu, .c-texts__menu, .c-texts__frontpage-item, .c-button__header, .l-footer__title, .l-footer__copyright {
+.p-pagenation-sp__btn a, .p-card__archive-texts, .c-title__menu, .c-texts__menu, .c-texts__frontpage-item, .c-button__header, .c-button__about > a, .l-footer__title, .l-footer__copyright, .l-main__introdaction {
   font-family: "M PLUS 1p", sans-serif;
 }
 
@@ -472,17 +472,14 @@ body {
 .l-main__hero {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background: url(../../images/mainvisual-img/mainvisual-sp@2x.jpg) no-repeat;
-  background-position: center center;
-  background-size: 100% 100vw;
   width: 100vw;
   height: 285px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 540px) {
   .l-main__hero {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -500,6 +497,11 @@ body {
   font-weight: 700;
   color: #fff;
 }
+@media screen and (min-width: 1024px) {
+  .l-main__content {
+    padding: 0 20px;
+  }
+}
 @media screen and (min-width: 540px) {
   .l-main__about {
     display: flex;
@@ -510,6 +512,44 @@ body {
   .l-main__about {
     margin: 0 30px;
   }
+}
+
+@media screen and (min-width: 540px) {
+  .l-main__hero-text.-big {
+    font-size: 60px;
+    top: calc(50% - 30px);
+    left: 65px;
+  }
+}
+.l-main__hero-text.-small {
+  font-size: 16px;
+  top: 62%;
+}
+@media screen and (min-width: 540px) {
+  .l-main__hero-text.-small {
+    top: calc(50% - 2px);
+    left: 285px;
+  }
+}
+.l-main__hero-cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.442);
+}
+
+.l-main__introdaction {
+  padding-top: 0px;
+  margin-bottom: 60px;
+}
+.l-main__introdaction-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.l-main__introdaction-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .l-footer {
@@ -557,6 +597,21 @@ body {
   border: 1px solid #707070;
   border-radius: 10px;
   text-align: center;
+}
+
+.c-button__about {
+  display: block;
+  width: 164px;
+  height: 43px;
+  margin: 0 auto;
+  border-radius: 30px;
+  color: #707070;
+  background-color: #fff;
+  text-align: center;
+}
+.c-button__about > a {
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .c-form__header {
@@ -639,6 +694,13 @@ body {
   }
 }
 
+.c-texts__card-archive {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.78px;
+  margin-bottom: 30px;
+}
+
 .c-title__menu {
   font-size: 24px;
   font-weight: 700;
@@ -662,6 +724,18 @@ body {
   .c-title__map {
     margin-bottom: 40px;
   }
+}
+
+.c-title__card-archive {
+  font-weight: 700;
+}
+.c-title__card-archive.-big {
+  font-size: 20px;
+  margin-bottom: 34px;
+}
+.c-title__card-archive.-small {
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .c-cover {
@@ -703,6 +777,27 @@ body {
   .p-card__frontpage.-eatin {
     width: 48%;
   }
+}
+
+.p-card__archive {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+.p-card__archive-img {
+  height: 230px;
+  width: 100%;
+}
+.p-card__archive-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p-card__archive-texts {
+  height: auto;
+  color: #fff;
+  background-color: #3C2B1C;
+  padding: 45px 30px 30px 30px;
 }
 
 .p-search-box {
@@ -813,6 +908,58 @@ body {
     font-size: 34px;
     margin-top: 94px;
     margin-bottom: 90px;
+  }
+}
+.p-pagenation-sp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.p-pagenation-sp__btn a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.p-pagenation {
+  display: none;
+}
+
+@media screen and (min-width: 540px) {
+  .p-pagenation-sp {
+    display: none;
+  }
+  .p-pagenation {
+    display: flex;
+    align-items: baseline;
+    width: 600px;
+    height: auto;
+    margin: 0 auto 40px auto;
+    font-size: 16px;
+    font-weight: 700;
+    color: #707070;
+  }
+  .p-pagenation__text {
+    margin-right: 10px;
+  }
+  .p-pagenation__link-list {
+    display: flex;
+  }
+  .p-pagenation__link-item {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #707070;
+    text-align: center;
+    padding: 9px 0 9px;
+    margin-left: 10px;
+  }
+  .p-pagenation__link-item.-current {
+    color: #fff;
+    background-color: #3C2B1C;
+  }
+  .p-pagenation__link-item:last-child {
+    margin-right: 10px;
   }
 }
 @media screen and (min-width: 1024px) {

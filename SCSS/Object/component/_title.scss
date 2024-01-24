@@ -31,3 +31,17 @@
         }
     }
 }
+
+// archive-card
+
+.c-title__card-archive{
+    font-weight: 700;
+    &.-big{
+        font-size: 20px;
+        margin-bottom: 34px;
+    }
+    &.-small{
+        font-size: 16px;
+        margin-bottom: 15px;       
+    }
+}

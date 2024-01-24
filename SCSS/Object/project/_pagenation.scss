@@ -1,0 +1,59 @@
+@use '../../Foundation/mixin' as m;
+@use '../../Foundation/variable' as v;
+
+.p-pagenation-sp{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &__btn{
+        & a{
+            font-size: 16px;
+            font-weight: 400;
+            @extend %MPlus;
+            color: v.$grey;
+        }
+    }
+}
+
+.p-pagenation{
+    display: none;
+    @extend %Roboto;
+}
+
+@include m.tab{
+    .p-pagenation-sp{
+        display: none;
+    }
+    .p-pagenation{
+        display: flex;
+        align-items: baseline;
+        width: 600px;
+        height: auto;
+        margin: 0 auto 40px auto;
+        font-size: 16px;
+        font-weight: 700;
+        color: v.$grey;
+        &__text{
+            margin-right: 10px;
+        }
+        &__link-list{
+            display: flex;
+        }
+        &__link-item{
+            display: block;
+            width: 35px;
+            height: 35px;
+            border: 1px solid v.$grey;
+            text-align: center;
+            padding: 9px 0 9px;
+            margin-left: 10px;
+            &.-current{
+                color: #fff;
+                background-color: v.$brownDark ;
+            }
+            &:last-child{
+                margin-right: 10px;
+            }
+        }
+    }
+}
