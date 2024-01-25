@@ -1,0 +1,12 @@
+@use './Foundation/mixin' as m;
+.l-main{
+    &__hero{
+        height: 225px;
+        background: url(../images/mainvisual-img/page-title_shop@2x.jpg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include m.tab{
+            height: 505px;
+        }
+    }
+}

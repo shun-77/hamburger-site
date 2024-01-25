@@ -1,3 +1,15 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500&display=swap");
+.l-main__hero {
+  height: 225px;
+  background: url(../images/mainvisual-img/page-title_shop@2x.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media screen and (min-width: 540px) {
+  .l-main__hero {
+    height: 505px;
+  }
+}
 
 /*# sourceMappingURL=page.css.map */

@@ -528,7 +528,7 @@ body {
 @media screen and (min-width: 540px) {
   .l-main__hero-text.-small {
     top: calc(50% - 2px);
-    left: 285px;
+    left: 320px;
   }
 }
 .l-main__hero-cover {
@@ -635,6 +635,13 @@ body {
   left: 8px;
   font-size: 1.5rem;
   color: #707070;
+}
+
+.c-form__search {
+  width: 100%;
+  height: 46px;
+  padding-left: 40px;
+  padding-right: 15px;
 }
 
 .c-line__main {
