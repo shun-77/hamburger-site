@@ -17,8 +17,13 @@
     &__list{
         margin-bottom: 80px;
     }
+    &__text{
+        margin: 0 0 30px 20px;
+    }
     &__title{
         display: none;
+        @extend %Roboto;
+        color: v.$grey;
     }
 }
 

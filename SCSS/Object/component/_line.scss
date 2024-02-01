@@ -4,8 +4,9 @@
         width: 33.89px;
         height: 2px;
         border: 3px solid #fff;
-        margin-top: 13px;
-        margin-bottom: 30px;
+        @include m.pc{
+            width: 60px;
+        }
     }
 
     &__map{

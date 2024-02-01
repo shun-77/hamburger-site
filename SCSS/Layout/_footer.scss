@@ -5,14 +5,18 @@
     height: 150px;
     margin-left: calc(50% - 50vw); 
     margin-right: calc(50% - 50vw);
+    margin-top: auto;  // フッター下部固定のため
     background-image:url(../../images/footer-layer.jpg) ;
     padding: 20px;
     position: relative;
+    
     &__title{
+        position: absolute;
+        left: calc(50% - 105px);
+        top: 23%;
         font-size: 18px;
         font-weight: 400;
         color: #FFFFFF;
-        text-align: center;
         @extend %MPlus;
     }
     &__copyright{
@@ -20,7 +24,7 @@
         font-weight: 400;
         color: #FFFFFF;
         position: absolute;
-        bottom: 5%;
+        bottom: 20%;
         left: calc(50% - 70px);
         @extend %MPlus;
     }

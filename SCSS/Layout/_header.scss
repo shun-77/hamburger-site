@@ -8,62 +8,23 @@
     background-color: v.$creamColor1;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    &__menu-btn--open{
+    &__menu-btn{
         position: absolute;
-        z-index: 5000;
-        top: 1.3%;
-        right: 1.3%;
-        color: v.$grey;
-        font-size: 20px;
-        font-weight: 700;
-        @extend %Roboto;
-        opacity: 1;
-        &.inactive{
-            display: none;
-            opacity: 0;
+        &--close{
+            z-index: 3000;
+            right: 3%;
+            top: 1.3%;
         }
-    }
-    &__menu-btn--close{
-        position: absolute;
-        z-index: 3000;
-        right: 3%;
-        top: 1.3%;
-        opacity: 0;
-        transition: opacity .4s;
-        &.active{
-            display: block;
-            opacity: 1;
-        }
-    }
-    &__btn-line--close{
-        position:relative;
-        display: block;
-        width: 32px;
-        height: 32px;
-        &::after,&::before{
-            position: absolute;
-            width: 38px;
-            height: 2px;
-            background-color: v.$grey;
-            z-index: 10000;
-            content: '';
-            top:calc(50% - 1px);
-        }
-        &::after{
-            transform: rotate(45deg);
-        }
-        &::before{
-            transform: rotate(-45deg);      
+        &--open{
+            z-index: 5000;
+            top: 1.3%;
+            right: 1.3%;
         }
     }
     &__logo{
         text-align: center;
         padding-top: 50px;
         margin-bottom: 30px;
-        color: v.$grey;
-        font-size: 40px;
-        font-weight: 700;
-        @extend %Roboto;
     }
 
 }

@@ -1,0 +1,78 @@
+@use '../../Foundation/mixin' as m;
+@use '../../Foundation/variable' as v;
+
+.p-hero{
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw ;
+    height: 285px;
+    position: relative;
+    margin-bottom: 40px;
+    @include m.tab{
+        margin-bottom: 50px;
+    }
+    @include m.pc{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    &__filter{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.442);
+    }
+    &__text{
+        position: absolute;
+        left: 25px;
+        color: #fff;
+        &--big{      
+            top:calc(50% - 18px) ;
+            font-size: 36px;
+            font-weight: 700;
+            &-archive{
+                @include m.tab{
+                    font-size: 60px;
+                    top: calc(50% - 30px);
+                    left: 65px;
+                }
+            }   
+        }
+        &--small{
+            font-size: 16px;
+            top: 62%;
+            @include m.tab{
+                top: calc(50% - 2px);
+                left: 280px;
+            }
+        }
+    }
+
+}
+
+
+.p-hero{
+    &--archive{
+        background: url(../images/mainvisual-img/page-title_arcive.jpg) no-repeat;
+        background-position: center left;
+        background-size: cover ;
+    }
+    &--frontpage{
+        background: url(../../images/mainvisual-img/mainvisual-sp@2x.jpg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include m.pc{
+            background: url(../images/mainvisual-img/mainvisual-pc.jpg);
+            background-position: center right;
+            background-size: 80%;
+        }
+    }
+    &--page{
+        height: 225px;
+        background: url(../images/mainvisual-img/page-title_shop@2x.jpg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        @include m.tab{
+            height: 505px;
+        }
+    }
+}

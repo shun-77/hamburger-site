@@ -1,0 +1,9 @@
+@use '../../Foundation/variable' as v;
+@use '../../Foundation/mixin' as m;
+
+.c-logo{
+    color: v.$grey;
+    font-size: 40px;
+    font-weight: 700;
+    @extend %Roboto;
+}

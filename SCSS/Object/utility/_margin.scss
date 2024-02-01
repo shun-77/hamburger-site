@@ -1,0 +1,13 @@
+@use '../../Foundation/mixin' as m;
+.u-margin{
+    &__full-screen{
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        &--pc{
+            @include m.pc{
+                margin-left: calc(50% - 50vw);
+                margin-right: calc(50% - 50vw);
+            }
+        }
+    }
+}

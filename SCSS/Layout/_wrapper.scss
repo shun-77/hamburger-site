@@ -1,3 +1,9 @@
+@use '../Foundation/mixin' as m;
 .l-wrapper{
     padding: 0 20px;
+    // フッターを下部に固定するため
+    min-height: 100vh;
+    @include m.tab{
+        padding: 0 30px;
+    }
 }

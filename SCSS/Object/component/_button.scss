@@ -1,23 +1,21 @@
 @use '../../Foundation/variable' as v;
 @use '../../Foundation/mixin' as m;
-.c-button{
-    &__header{
-        width:30%;
-        height: 46px;
-        color: v.$grey;
-        background-color: v.$lightGrey;
-        border: 1px solid v.$grey;
-        border-radius: 10px;
-        text-align: center;
-        @extend %MPlus;
-    }   
+.c-button-search{
+    width:30%;
+    height: 46px;
+    color: v.$grey;
+    background-color: v.$lightGrey;
+    border: 1px solid v.$grey;
+    border-radius: 10px;
+    text-align: center;
+    @extend %MPlus;
 }
 
 .c-button{
     &__about{
         display: block;
         width:164px ;
-        height: 43px;
+        height: 47px;
         margin: 0 auto;
         border-radius: 30px;
         color: v.$grey;
@@ -31,6 +29,50 @@
         @include m.pc{
             width: 292px;
             height: 76px;
+            border-radius: 50px;
+        }
+    }
+}
+
+.c-button-menu{  
+    &--open{
+        color: v.$grey;
+        font-size: 20px;
+        font-weight: 700;
+        @extend %Roboto;
+        opacity: 1;
+        &.inactive{
+            display: none;
+            opacity: 0;
+        }
+    }
+    &--close{
+        opacity: 0;
+        transition: opacity .4s;
+        &.active{
+            display: block;
+            opacity: 1;
+        }
+    }
+    &__line-close{
+        position:relative;
+        display: block;
+        width: 32px;
+        height: 32px;
+        &::after,&::before{
+            position: absolute;
+            width: 38px;
+            height: 2px;
+            background-color: v.$grey;
+            z-index: 10000;
+            content: '';
+            top:calc(50% - 1px);
+        }
+        &::after{
+            transform: rotate(45deg);
+        }
+        &::before{
+            transform: rotate(-45deg);      
         }
     }
 }

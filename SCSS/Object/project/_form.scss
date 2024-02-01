@@ -1,0 +1,34 @@
+@use '../../Foundation/mixin'as m;
+@use '../../Foundation/variable' as v;
+.p-form-search{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    @include m.pc{
+        width: 45%;
+        margin: 0;
+    }
+    &__box{
+        width: 67%;
+        height: 46px;
+        display: block;
+        position: relative;
+        background-color: #fff;
+        border: 1px solid v.$grey;
+        border-radius: 10px 8px 10px 10px;
+        &>i{
+            position: absolute;
+            top: calc(50% - 10.7px);
+            left: 8px;
+            font-size: 1.5rem;
+            color:v.$grey;
+        }
+        &-input{
+            width: 100%;
+            height: 46px;
+            padding-left:40px;
+            padding-right: 15px;
+        }
+    }
+}

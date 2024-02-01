@@ -1,13 +1,26 @@
 @use '../../Foundation/mixin' as m;
 
-@include m.pc{
     .u-display{
         &__flex{
-            &.-pc{
+            display: flex;
+            &-column{
+                display: flex;
+                flex-direction: column;
+                &--pc{
+                    @include m.pc{
+                        display: flex;
+                        flex-direction: column;
+                }
+                }
+            }
+            &-row-reverse{
                 display: flex;
                 flex-direction: row-reverse;
-                margin-left: calc(50% - 50vw);
-                margin-right: calc(50% - 50vw);
+                &--pc{
+                    @include m.pc{
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
             }
         }
     }
