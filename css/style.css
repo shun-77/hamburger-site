@@ -377,12 +377,8 @@ th {
   font-family: "Roboto", sans-serif;
 }
 
-.p-pagenation-sp__btn a, .p-card-archive__textbox, .c-title__menu, .c-textbox__menu-text, .c-textbox--basic, .c-textbox__frontpage-item, .c-button-search, .c-button__about > a, .l-footer__title, .l-footer__copyright {
+.p-hero__text, .p-pagenation-sp__btn a, .p-card-archive__textbox, .c-title__menu, .c-textbox__menu-text, .c-textbox--basic, .c-textbox__frontpage-item, .c-button-search, .c-button__about > a, .l-footer__title, .l-footer__copyright {
   font-family: "M PLUS 1p", sans-serif;
-}
-
-html, body {
-  height: 100vh;
 }
 
 body {
@@ -525,6 +521,7 @@ body {
   color: #707070;
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
   opacity: 1;
 }
 .c-button-menu--open.inactive {
@@ -544,11 +541,17 @@ body {
   display: block;
   width: 32px;
   height: 32px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .c-button-menu__line-close {
+    display: none;
+  }
 }
 .c-button-menu__line-close::after, .c-button-menu__line-close::before {
   position: absolute;
   width: 38px;
-  height: 2px;
+  height: 6px;
   background-color: #707070;
   z-index: 10000;
   content: "";
@@ -704,6 +707,11 @@ body {
   display: block;
   opacity: 1;
   transition: 0.5s;
+}
+@media screen and (min-width: 1024px) {
+  .c-cover.active {
+    display: none;
+  }
 }
 
 .c-logo {
@@ -924,7 +932,6 @@ body {
 
 .p-menu {
   width: 326px;
-  height: 2750px;
   position: absolute;
   z-index: 1000;
   background-color: #F2EDE9;
@@ -1081,13 +1088,18 @@ body {
 }
 .p-hero__text {
   position: absolute;
-  left: 25px;
+  left: 10%;
   color: #fff;
 }
 .p-hero__text--big {
   top: calc(50% - 18px);
   font-size: 36px;
   font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .p-hero__text--big {
+    font-size: 40px;
+  }
 }
 @media screen and (min-width: 540px) {
   .p-hero__text--big-archive {

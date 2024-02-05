@@ -1,6 +1,8 @@
 @use '../../Foundation/mixin' as m;
 @use '../../Foundation/variable' as v;
 
+// メインビジュアル共通レイアウト
+
 .p-hero{
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -23,12 +25,16 @@
     }
     &__text{
         position: absolute;
-        left: 25px;
+        left: 10%;
         color: #fff;
+        @extend %MPlus;
         &--big{      
             top:calc(50% - 18px) ;
             font-size: 36px;
             font-weight: 700;
+            @include m.pc{
+                font-size: 40px;
+            }
             &-archive{
                 @include m.tab{
                     font-size: 60px;
@@ -49,6 +55,7 @@
 
 }
 
+// メインビジュアル各画像指定
 
 .p-hero{
     &--archive{

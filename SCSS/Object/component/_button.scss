@@ -39,6 +39,7 @@
         color: v.$grey;
         font-size: 20px;
         font-weight: 700;
+        cursor: pointer;
         @extend %Roboto;
         opacity: 1;
         &.inactive{
@@ -59,10 +60,14 @@
         display: block;
         width: 32px;
         height: 32px;
+        @include m.pc{
+            display:none;
+        }
+        cursor: pointer;
         &::after,&::before{
             position: absolute;
             width: 38px;
-            height: 2px;
+            height: 6px;
             background-color: v.$grey;
             z-index: 10000;
             content: '';
