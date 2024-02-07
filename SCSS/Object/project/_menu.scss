@@ -3,34 +3,47 @@
 
 .p-menu{
     width: 326px;
-    position: absolute;
+    height: 0;
+    overflow: hidden;
+    position:fixed;
     z-index: 1000;
     background-color: v.$creamColor2;
-    padding: 200px 0 0 30px;
+    padding-left: 30px;
     right: 0;
     transform: translateX(326px);
     &.active{
+    height: 100%;
+    overflow: visible;
     transform: translateX(0);
     transition: transform .3s;
     }
+    &__container{
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        @include m.pc{
+            overflow: visible;
+        }
+    }
     &__list{
         margin-bottom: 80px;
+        &:first-of-type{
+            margin-top: 180px;
+            @include m.pc{
+                margin-top: 80px;
+            }
+        }
     }
     &__text{
         margin: 0 0 30px 20px;
     }
-    &__title{
+    &__logo{
         display: none;
         @extend %Roboto;
         color: v.$grey;
     }
 }
 
-@include m.tab{
-    .p-menu{
-        height: 1790px;
-    }
-}
 @include m.pc{
     .p-menu{
         padding: 0 20px 0 40px;
@@ -38,7 +51,7 @@
         transform: translateX(0);
         width: 20%;
         height: auto;
-        &__title{
+        &__logo{
             display: block;
             font-size: 34px;
             margin-top: 94px;

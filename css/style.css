@@ -373,12 +373,19 @@ th {
   font-weight: bold;
 }
 
-.p-pagenation, .p-menu__title, .c-logo, .c-button-menu--open {
+.p-pagenation, .p-menu__logo, .c-logo, .c-button-menu--open {
   font-family: "Roboto", sans-serif;
 }
 
 .p-hero__text, .p-pagenation-sp__btn a, .p-card-archive__textbox, .c-title__menu, .c-textbox__menu-text, .c-textbox--basic, .c-textbox__frontpage-item, .c-button-search, .c-button__about > a, .l-footer__title, .l-footer__copyright {
   font-family: "M PLUS 1p", sans-serif;
+}
+
+html.scroll-prevent {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -932,33 +939,50 @@ body {
 
 .p-menu {
   width: 326px;
-  position: absolute;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
   z-index: 1000;
   background-color: #F2EDE9;
-  padding: 200px 0 0 30px;
+  padding-left: 30px;
   right: 0;
   transform: translateX(326px);
 }
 .p-menu.active {
+  height: 100%;
+  overflow: visible;
   transform: translateX(0);
   transition: transform 0.3s;
+}
+.p-menu__container {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .p-menu__container {
+    overflow: visible;
+  }
 }
 .p-menu__list {
   margin-bottom: 80px;
 }
+.p-menu__list:first-of-type {
+  margin-top: 180px;
+}
+@media screen and (min-width: 1024px) {
+  .p-menu__list:first-of-type {
+    margin-top: 80px;
+  }
+}
 .p-menu__text {
   margin: 0 0 30px 20px;
 }
-.p-menu__title {
+.p-menu__logo {
   display: none;
   color: #707070;
 }
 
-@media screen and (min-width: 540px) {
-  .p-menu {
-    height: 1790px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .p-menu {
     padding: 0 20px 0 40px;
@@ -967,7 +991,7 @@ body {
     width: 20%;
     height: auto;
   }
-  .p-menu__title {
+  .p-menu__logo {
     display: block;
     font-size: 34px;
     margin-top: 94px;
